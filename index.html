@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Product Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+    <body>
+
+        <!-- navbar start -->
+        
+                      
+        <!-- navbar exit -->
+         <div class="container">
+             <div class="wrapper ">
+                <div class="product-box">
+                    <div class="all-images">
+                    <div class="small-images">
+                        <img src="images/img-1.png" onclick="clickimg(this)">
+                         <img src="images/img-2.png" onclick="clickimg(this)">
+                        <img src="images/img-3.png" onclick="clickimg(this)">
+                        <img src="images/img-4.png" onclick="clickimg(this)">
+                    </div>
+                         <div class="main-images">
+                     <img src="images/img-3.png" id="imagebox">
+                </div>
+            </div>
+            
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : Apple</p>
+                    <h2>APPLE iPhone 12 (White, 64 GB)</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class=" fa fa-star"></span>
+                    </div>
+
+                    <div class="price-box">
+                        <p class="price">&#8377; 77,900</p>
+                        <strike>&#8377; 89,900</strike>
+                    </div>
+                    <p>Size : <select name="size">
+                        <option value="select color">Select color</option>
+                        <option value="black">black</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                        <option value="purple">purple</option>
+                    </select></p>
+                    <div class="btn-div">  
+                    <p>Quantity <input type="text" value="1">
+
+                        <button>
+                            <span class=" fa fa-shopping-cart"></span>
+                            Add to Cart
+                        </button>
+
+                        <button class="buy">
+                            <span class="fa fa-shopping-cart"></span>
+                            Buy now
+                        </button>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- js code -->
+<script>
+    function clickimg(smallImg){
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src
+    }
+</script>
+
+</body>
+</html>
